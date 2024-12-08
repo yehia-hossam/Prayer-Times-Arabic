@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Cairo:wght@200..1000&family=Harmattan:wght@400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-size: border-box;
+
+  font-family: "Cairo", sans-serif;
+
+}
+
+html{
+  direction: rtl;
+  overflow: hidden;
+
+}
+
+section{
+  background:url(assets/background.jpeg) ;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+
+}
+
+ section .container{
+  width:450px;
+
+  background: #332a224e;
+  padding: 30px 25px;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid #390339;
+  margin-right: 5%;
+  margin-top: 5px;
+
+ }
+
+ section .top-sec{
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom:1px solid #390339  ;
+ }
+
+ section .top-sec select{
+  width: 150px;
+  border-radius: 5px;
+  outline: none;
+  background: #39033999;
+  padding: 2px 10px;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 10px;
+  
+ }
+ 
+ section .top-sec h3{
+  font-size: 26px;
+  color: #fff;
+ }
+
+ section .top-sec .date{
+  width: 150px;
+  text-align: center;
+ }
+
+ section .top-sec .date h4{
+  font-size: 26px;
+color:#fff;
+ }
+
+ section .prayer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  color: #fff;
+  background: #390339;
+  margin-bottom: 10px;
+
+  border-radius:  15px;
+  border: 1px solid #d9cfd25c;
+  font-size: 20px;
+
+ }
+
+  .title  h1{
+ background-color:#3903398d;
+width: 100%;
+color: #fff;
+text-align: center;
+margin-bottom: 15px;
+ 
+  
+ }
+
+ .title2 h4{
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-family: "Harmattan", sans-serif;
+
+  width: 100%;
+border: 1px solid #ffffff38;  
+
+
+ }
+
+ 
+
+ .footer{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-right: 900px;
+
+  text-align: center;
+  color: #ffffff46;
+ 
+ }
+
+
+ @media screen and (max-width: 768px) {
+  section .container {
+    width: 90%; /* جعل العرض يتناسب مع الشاشات الصغيرة */
+    margin-right: auto;
+    margin-left: auto;
+
+
+  }
+
+  section .top-sec h3 {
+    font-size: 22px;
+
+  }
+
+  section .top-sec select {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  section .top-sec .date h4 {
+    font-size: 20px;
+  }
+
+  section .prayer {
+    font-size: 18px;
+    padding: 5px 15px;
+  }
+ 
+ 
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section .container {
+    width: 95%; /* عرض شبه كامل على الهواتف */
+    padding: 20px 15px;
+  }
+
+  section .top-sec select {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  section .prayer {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+}
