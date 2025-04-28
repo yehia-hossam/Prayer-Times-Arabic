@@ -1,4 +1,6 @@
 # Prayer-Times-Arabic
+![Website Preview](https://github.com/yehia-hossam/Prayer-Times-Arabic/raw/main/assets/preview-image.png)
+
 This website provides Arabic prayer times and supports several governorates and is responsive to all screens.
 
 ## Live Demo:
@@ -20,3 +22,5 @@ This website provides Arabic prayer times and supports several governorates and 
 - HTML
 - CSS
 - API
+
+
