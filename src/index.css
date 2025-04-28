@@ -19,7 +19,7 @@ html{
 }
 
 section{
-  background:url(assets/background.jpeg) ;
+  background:url(/public/Background.jpeg) ;
   background-size: cover;
   background-position: center;
   display: flex;
