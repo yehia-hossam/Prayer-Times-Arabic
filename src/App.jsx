@@ -20,6 +20,7 @@ function App() {
       try {
         const response = await fetch(
           `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=Egypt`
+          
         );
 
         if (response.ok) {
@@ -34,7 +35,6 @@ function App() {
         console.error("Error fetching prayer times:", error);
       }
     };
-    
 
     fetchPrayerTimes();
   }, [city]);
@@ -50,24 +50,20 @@ function App() {
     return `${hours}:${minutes < 10 ? "0" + minutes : minutes} ${period}`;
   };
 
-
-  
-
   return (
     <section>
-      
-
       <div className="container">
-      <div className="title">
-            <h1>توقيت الصلاه</h1>
-            </div>
+        <div className="title">
+          <h1>توقيت الصلاه</h1>
+        </div>
         <div className="top-sec">
           <div className="city">
-           
-          
-
             <h3>المدينة</h3>
-            <select name="city" id="city" onChange={(e) => setCity(e.target.value)}>
+            <select
+              name="city"
+              id="city"
+              onChange={(e) => setCity(e.target.value)}
+            >
               {citys.map((city) => (
                 <option key={city.value} value={city.value}>
                   {city.name}
@@ -82,25 +78,19 @@ function App() {
           </div>
         </div>
 
-    
-
-
         <Prayer name="الفجر" time={formatTimes(prayerTimes.Fajr)} />
         <Prayer name="الظهر" time={formatTimes(prayerTimes.Dhuhr)} />
         <Prayer name="العصر" time={formatTimes(prayerTimes.Asr)} />
         <Prayer name="المغرب" time={formatTimes(prayerTimes.Maghrib)} />
         <Prayer name="العشاء" time={formatTimes(prayerTimes.Isha)} />
 
-
-     <div className="title2">
-      <h4>ﷺ اللهم صّلِ وسَلّمْ عَلۓِ نَبِيْنَامُحَمد ﷺ </h4>
-     </div>
-       
+        <div className="title2">
+          <h4>ﷺ اللهم صّلِ وسَلّمْ عَلۓِ نَبِيْنَامُحَمد ﷺ </h4>
+        </div>
       </div>
-     
+
       <footer className="footer">
         <p>Copyright @ 2024 Design & Yehia Hossam</p>
-
       </footer>
     </section>
   );
